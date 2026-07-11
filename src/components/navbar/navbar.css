@@ -1,0 +1,131 @@
+/* ===== Navbar Main Styles ===== */
+.navbar-custom {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%) !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  padding: 0.5rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1050;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Brand / Logo */
+.navbar-brand-custom {
+  font-size: 1.5rem;
+  font-weight: 700;
+  background: linear-gradient(45deg, #f7971e, #ffd200);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 0.3s ease;
+}
+
+.navbar-brand-custom:hover {
+  transform: scale(1.05);
+}
+
+/* Navbar Toggler (Hamburger) */
+.navbar-toggler-custom {
+  border: 2px solid rgba(255, 255, 255, 0.3) !important;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.navbar-toggler-custom:hover {
+  border-color: #f7971e !important;
+  background: rgba(247, 151, 30, 0.1);
+}
+
+.navbar-toggler-custom .navbar-toggler-icon-custom {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+/* Navbar Nav */
+.navbar-nav-custom {
+  gap: 0.25rem;
+}
+
+/* Navbar Items */
+.nav-item-custom {
+  position: relative;
+}
+
+/* Navbar Links */
+.nav-link-custom {
+  color: rgba(255, 255, 255, 0.75) !important;
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 0.6rem 1rem !important;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  position: relative;
+  text-decoration: none !important;
+  display: block;
+}
+
+.nav-link-custom:hover {
+  color: #fff !important;
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-1px);
+}
+
+/* Active Link */
+.nav-link-custom.active {
+  color: #ffd200 !important;
+  background: rgba(247, 151, 30, 0.15);
+}
+
+.nav-link-custom.active::after {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 3px;
+  background: linear-gradient(90deg, #f7971e, #ffd200);
+  border-radius: 10px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 991.98px) {
+  .navbar-custom {
+    padding: 0.4rem 0;
+  }
+
+  .navbar-nav-custom {
+    gap: 0;
+    padding: 0.5rem 0;
+  }
+
+  .nav-link-custom {
+    padding: 0.7rem 1rem !important;
+    border-radius: 6px;
+    margin: 2px 0;
+  }
+
+  .nav-link-custom.active::after {
+    display: none;
+  }
+
+  .nav-link-custom.active {
+    border-left: 4px solid #ffd200;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-brand-custom {
+    font-size: 1.2rem;
+  }
+
+  .nav-link-custom {
+    font-size: 0.9rem;
+    padding: 0.6rem 0.8rem !important;
+  }
+}

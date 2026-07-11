@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.marksheet {
+    width: 800px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.header h1 {
+    color: #1e3a8a;
+    margin-bottom: 8px;
+}
+
+.header h2 {
+    color: #555;
+    font-weight: 500;
+}
+
+.student-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+    gap: 10px;
+}
+
+.student-info p {
+    font-size: 16px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 25px;
+}
+
+table th,
+table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+table th {
+    background-color: #1e3a8a;
+    color: white;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+.result {
+    background-color: #f1f5f9;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.result p {
+    margin: 8px 0;
+    font-size: 17px;
+    font-weight: 500;
+}

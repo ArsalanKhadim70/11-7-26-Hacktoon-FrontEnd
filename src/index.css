@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding-top: 72px; /* Fixed navbar ki height ke liye space */
+  background: #f5f5f5;
+}
+
+h1 {
+  color: red;
+}
