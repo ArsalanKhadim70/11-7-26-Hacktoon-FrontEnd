@@ -20,8 +20,8 @@ const navLinks = [
     { to: '/users', label: 'Users', icon: 'users' },
     { to: '/todo', label: 'Todo', icon: 'tasks' },
     { to: '/services', label: 'Services', icon: 'cogs' },
-    { to: '/slider', label: 'Slider', icon: 'images' },
-    { to: '/bulb', label: 'Bulb', icon: 'lightbulb' },
+    // { to: '/slider', label: 'Slider', icon: 'images' },
+    // { to: '/bulb', label: 'Bulb', icon: 'lightbulb' },
 ];
 
 const Navbar = () => {

@@ -11,6 +11,7 @@ import { useNavigate } from 'react-router';
 import { privateRoutesData, publicRoutesData } from '../../utils/all-routes';
 import Swal from "sweetalert2"
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 const Login = () => {
 
@@ -87,9 +88,9 @@ const Login = () => {
   }, []);
 
   return (
-    <MDBContainer className="p-3 my-5 d-flex flex-column w-200">
+    <MDBContainer className="p-3 my-5 d-flex flex-column w-50">
 
-      <h1 style={{ textAlign: "center" ,color:"#3b71ca" }}> Login </h1>
+      <h1 style={{ textAlign: "center", color: "#3b71ca" }}> Login </h1>
 
       <MDBInput
         wrapperClass='mb-4'
@@ -132,7 +133,7 @@ const Login = () => {
       </MDBBtn>
 
       <div className="text-center">
-        <p>Not a member? <a href="#!">Register</a></p>
+        <p>Not a member? <Link to="/signup">Register</Link></p>
         <p>or sign up with:</p>
 
         <div className='d-flex justify-content-between mx-auto' style={{ width: '40%' }}>
